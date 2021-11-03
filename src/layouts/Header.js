@@ -5,12 +5,12 @@ import PersonIcon from '@mui/icons-material/Person';
 
 export default function Header() {
     return (
-            <Box
+            <div className="header__area">
+                <Box
                 sx={{
                 boxShadow: 1,
                 bgcolor: 'background.paper',
                 p: 1,
-                width: '100%',
                 height: '8vh',
                 }}
             >
@@ -26,5 +26,6 @@ export default function Header() {
                     </ul>
                 </Container>
             </Box>
+            </div>
     )
 }

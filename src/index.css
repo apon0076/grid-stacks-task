@@ -45,7 +45,21 @@ table {
 
 /* --- Font Import Start --- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 /* --- Font Import End --- */
+
+/* --- General CSS Start --- */
+.page__bg{
+    background-color: #F7F6FB;
+    padding: 2.5rem 0 3rem 0;
+}
+.body__section{
+    background-color: #ffffff;
+    box-shadow: 0 0 1px #c7c7c7;
+    border-radius: 10px;
+}
+/* --- General CSS End --- */
 
 /* --- Header CSS Start --- */
 .header__section{
@@ -59,6 +73,7 @@ table {
     font-size: 16px;
     color: #666666;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 .user__loginName{
     color: crimson !important;
@@ -79,3 +94,96 @@ table {
     left: -20px;
 }
 /* --- Header CSS End --- */
+
+
+/* --- Hero Area CSS Start --- */
+.heroArea__bannerSection{
+    position: relative;
+}
+.heroArea__bannerSection--img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 260px;
+    object-fit: cover;
+}
+.heroArea__overlay{
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 260px;
+    background-color: rgba(25, 27, 34, 0.25);
+
+}
+.profile__pictureSection{
+    height: 195px;
+    width: 195px;
+    margin-top: -98px;
+    position: relative;
+    margin-left: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #c7c7c7;
+}
+.edit__iconSection{
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    box-shadow: 0 0 1px #c7c7c7;
+    cursor: pointer;
+}
+.edit__iconSection--icon{
+    height: 27px;
+    width: 27px;
+    color: #2A3B8F;
+}
+.edit__iconSection--banner{
+    top: 15px;
+    right: 15px;
+}
+.edit__iconSection--profilePicture{
+    bottom: 33px;
+    right: 0;
+}
+/* --- Hero Area CSS End --- */
+
+/* --- Form Section CSS Start --- */
+.formSection{
+    padding: 50px 30px;
+}
+.formField__label{
+    font-size: 18px;
+    font-family: 'Crimson Roman', serif;
+
+}
+/* --- Form Section CSS End --- */
+
+/* --- Footer CSS Start --- */
+.footer__section{
+    width: 100%;
+    height: 18vh;
+    background-color: #2A3B8F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.footer__section ul{
+    display: flex;
+    align-items: center;
+}
+.footer__section ul li{
+    margin: 0 15px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+/* --- Footer CSS End --- */
