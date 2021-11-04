@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '@mui/material/Container';
 import HeroImg from './../asset/images/heroImage.png';
 import ModeEditOutlinedIcon from '@mui/icons-material/ModeEditOutlined';
+import ProfilePicture from './../asset/images/563ee58f5111cec7bacc28693e4bee77'
 
 export default function HeroArea() {
     return (
@@ -14,6 +14,7 @@ export default function HeroArea() {
                 </div>
             </div>
             <div className="profile__pictureSection">
+                <img className="profilePicture__image" src={ProfilePicture} alt="profile-picture"/>
                 <div className="edit__iconSection edit__iconSection--profilePicture">
                     <ModeEditOutlinedIcon className="edit__iconSection--icon"/>
                 </div>
